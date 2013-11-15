@@ -21,6 +21,25 @@
 		5976EC911833CD27001C14FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5976EC731833CD27001C14FA /* UIKit.framework */; };
 		5976EC991833CD27001C14FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5976EC971833CD27001C14FA /* InfoPlist.strings */; };
 		5976EC9B1833CD27001C14FA /* campusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5976EC9A1833CD27001C14FA /* campusTests.m */; };
+		599396EE1835F38D0050E1BD /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 599396ED1835F38D0050E1BD /* BaseView.m */; };
+		599396F21835F3AC0050E1BD /* HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 599396F01835F3AC0050E1BD /* HomeView.m */; };
+		599396F31835F3AC0050E1BD /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 599396F11835F3AC0050E1BD /* HomeView.xib */; };
+		599396FE1835F7620050E1BD /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 599396FC1835F7620050E1BD /* LoginView.m */; };
+		599396FF1835F7620050E1BD /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 599396FD1835F7620050E1BD /* LoginView.xib */; };
+		5993970A1835F7DA0050E1BD /* RegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 599397081835F7DA0050E1BD /* RegisterView.m */; };
+		5993970B1835F7DA0050E1BD /* RegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 599397091835F7DA0050E1BD /* RegisterView.xib */; };
+		5993970F1835F7F90050E1BD /* ForgetPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5993970D1835F7F90050E1BD /* ForgetPasswordView.m */; };
+		599397101835F7F90050E1BD /* ForgetPasswordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5993970E1835F7F90050E1BD /* ForgetPasswordView.xib */; };
+		599397181835F8940050E1BD /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 599397161835F8940050E1BD /* MapView.m */; };
+		599397191835F8940050E1BD /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 599397171835F8940050E1BD /* MapView.xib */; };
+		5993971D1835F8AA0050E1BD /* YouthView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5993971B1835F8AA0050E1BD /* YouthView.m */; };
+		5993971E1835F8AA0050E1BD /* YouthView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5993971C1835F8AA0050E1BD /* YouthView.xib */; };
+		599397221835F8B70050E1BD /* ShopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 599397201835F8B70050E1BD /* ShopView.m */; };
+		599397231835F8B70050E1BD /* ShopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 599397211835F8B70050E1BD /* ShopView.xib */; };
+		599397271835F8C40050E1BD /* HelpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 599397251835F8C40050E1BD /* HelpView.m */; };
+		599397281835F8C40050E1BD /* HelpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 599397261835F8C40050E1BD /* HelpView.xib */; };
+		5993972D1835F8DA0050E1BD /* MoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5993972B1835F8DA0050E1BD /* MoreView.m */; };
+		5993972E1835F8DA0050E1BD /* MoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5993972C1835F8DA0050E1BD /* MoreView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +72,35 @@
 		5976EC961833CD27001C14FA /* campusTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "campusTests-Info.plist"; sourceTree = "<group>"; };
 		5976EC981833CD27001C14FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5976EC9A1833CD27001C14FA /* campusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = campusTests.m; sourceTree = "<group>"; };
+		599396EC1835F38D0050E1BD /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		599396ED1835F38D0050E1BD /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		599396EF1835F3AC0050E1BD /* HomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeView.h; sourceTree = "<group>"; };
+		599396F01835F3AC0050E1BD /* HomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeView.m; sourceTree = "<group>"; };
+		599396F11835F3AC0050E1BD /* HomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
+		599396FB1835F7620050E1BD /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
+		599396FC1835F7620050E1BD /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
+		599396FD1835F7620050E1BD /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		599397071835F7DA0050E1BD /* RegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterView.h; sourceTree = "<group>"; };
+		599397081835F7DA0050E1BD /* RegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterView.m; sourceTree = "<group>"; };
+		599397091835F7DA0050E1BD /* RegisterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterView.xib; sourceTree = "<group>"; };
+		5993970C1835F7F90050E1BD /* ForgetPasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetPasswordView.h; sourceTree = "<group>"; };
+		5993970D1835F7F90050E1BD /* ForgetPasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetPasswordView.m; sourceTree = "<group>"; };
+		5993970E1835F7F90050E1BD /* ForgetPasswordView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgetPasswordView.xib; sourceTree = "<group>"; };
+		599397151835F8940050E1BD /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
+		599397161835F8940050E1BD /* MapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapView.m; sourceTree = "<group>"; };
+		599397171835F8940050E1BD /* MapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
+		5993971A1835F8AA0050E1BD /* YouthView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouthView.h; sourceTree = "<group>"; };
+		5993971B1835F8AA0050E1BD /* YouthView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouthView.m; sourceTree = "<group>"; };
+		5993971C1835F8AA0050E1BD /* YouthView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YouthView.xib; sourceTree = "<group>"; };
+		5993971F1835F8B70050E1BD /* ShopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopView.h; sourceTree = "<group>"; };
+		599397201835F8B70050E1BD /* ShopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopView.m; sourceTree = "<group>"; };
+		599397211835F8B70050E1BD /* ShopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopView.xib; sourceTree = "<group>"; };
+		599397241835F8C40050E1BD /* HelpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpView.h; sourceTree = "<group>"; };
+		599397251835F8C40050E1BD /* HelpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpView.m; sourceTree = "<group>"; };
+		599397261835F8C40050E1BD /* HelpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpView.xib; sourceTree = "<group>"; };
+		5993972A1835F8DA0050E1BD /* MoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreView.h; sourceTree = "<group>"; };
+		5993972B1835F8DA0050E1BD /* MoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreView.m; sourceTree = "<group>"; };
+		5993972C1835F8DA0050E1BD /* MoreView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +160,11 @@
 		5976EC751833CD27001C14FA /* campus */ = {
 			isa = PBXGroup;
 			children = (
+				5993972F1835F9050050E1BD /* resources */,
+				599396EB1835E9CC0050E1BD /* utils */,
+				599396EA1835D1020050E1BD /* view */,
+				599396E91835D0FC0050E1BD /* control */,
+				599396E81835D0F50050E1BD /* model */,
 				5976EC7E1833CD27001C14FA /* AppDelegate.h */,
 				5976EC7F1833CD27001C14FA /* AppDelegate.m */,
 				5976EC811833CD27001C14FA /* Main.storyboard */,
@@ -150,6 +203,150 @@
 				5976EC971833CD27001C14FA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		599396E81835D0F50050E1BD /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		599396E91835D0FC0050E1BD /* control */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = control;
+			sourceTree = "<group>";
+		};
+		599396EA1835D1020050E1BD /* view */ = {
+			isa = PBXGroup;
+			children = (
+				599397291835F8CD0050E1BD /* more */,
+				599397141835F8800050E1BD /* help */,
+				599397131835F8770050E1BD /* shop */,
+				599397121835F8320050E1BD /* youth */,
+				599397111835F82A0050E1BD /* map */,
+				599397011835F77E0050E1BD /* forgetpassword */,
+				599397001835F7720050E1BD /* register */,
+				599396F41835F3C00050E1BD /* login */,
+				599396EC1835F38D0050E1BD /* BaseView.h */,
+				599396ED1835F38D0050E1BD /* BaseView.m */,
+				599396EF1835F3AC0050E1BD /* HomeView.h */,
+				599396F01835F3AC0050E1BD /* HomeView.m */,
+				599396F11835F3AC0050E1BD /* HomeView.xib */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		599396EB1835E9CC0050E1BD /* utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		599396F41835F3C00050E1BD /* login */ = {
+			isa = PBXGroup;
+			children = (
+				599396FB1835F7620050E1BD /* LoginView.h */,
+				599396FC1835F7620050E1BD /* LoginView.m */,
+				599396FD1835F7620050E1BD /* LoginView.xib */,
+			);
+			name = login;
+			sourceTree = "<group>";
+		};
+		599397001835F7720050E1BD /* register */ = {
+			isa = PBXGroup;
+			children = (
+				599397071835F7DA0050E1BD /* RegisterView.h */,
+				599397081835F7DA0050E1BD /* RegisterView.m */,
+				599397091835F7DA0050E1BD /* RegisterView.xib */,
+			);
+			name = register;
+			sourceTree = "<group>";
+		};
+		599397011835F77E0050E1BD /* forgetpassword */ = {
+			isa = PBXGroup;
+			children = (
+				5993970C1835F7F90050E1BD /* ForgetPasswordView.h */,
+				5993970D1835F7F90050E1BD /* ForgetPasswordView.m */,
+				5993970E1835F7F90050E1BD /* ForgetPasswordView.xib */,
+			);
+			name = forgetpassword;
+			sourceTree = "<group>";
+		};
+		599397111835F82A0050E1BD /* map */ = {
+			isa = PBXGroup;
+			children = (
+				599397151835F8940050E1BD /* MapView.h */,
+				599397161835F8940050E1BD /* MapView.m */,
+				599397171835F8940050E1BD /* MapView.xib */,
+			);
+			name = map;
+			sourceTree = "<group>";
+		};
+		599397121835F8320050E1BD /* youth */ = {
+			isa = PBXGroup;
+			children = (
+				5993971A1835F8AA0050E1BD /* YouthView.h */,
+				5993971B1835F8AA0050E1BD /* YouthView.m */,
+				5993971C1835F8AA0050E1BD /* YouthView.xib */,
+			);
+			name = youth;
+			sourceTree = "<group>";
+		};
+		599397131835F8770050E1BD /* shop */ = {
+			isa = PBXGroup;
+			children = (
+				5993971F1835F8B70050E1BD /* ShopView.h */,
+				599397201835F8B70050E1BD /* ShopView.m */,
+				599397211835F8B70050E1BD /* ShopView.xib */,
+			);
+			name = shop;
+			sourceTree = "<group>";
+		};
+		599397141835F8800050E1BD /* help */ = {
+			isa = PBXGroup;
+			children = (
+				599397241835F8C40050E1BD /* HelpView.h */,
+				599397251835F8C40050E1BD /* HelpView.m */,
+				599397261835F8C40050E1BD /* HelpView.xib */,
+			);
+			name = help;
+			sourceTree = "<group>";
+		};
+		599397291835F8CD0050E1BD /* more */ = {
+			isa = PBXGroup;
+			children = (
+				5993972A1835F8DA0050E1BD /* MoreView.h */,
+				5993972B1835F8DA0050E1BD /* MoreView.m */,
+				5993972C1835F8DA0050E1BD /* MoreView.xib */,
+			);
+			name = more;
+			sourceTree = "<group>";
+		};
+		5993972F1835F9050050E1BD /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				599397311835F91B0050E1BD /* common */,
+				599397301835F9110050E1BD /* images */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		599397301835F9110050E1BD /* images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		599397311835F91B0050E1BD /* common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,8 +426,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				5976EC881833CD27001C14FA /* Images.xcassets in Resources */,
+				599397101835F7F90050E1BD /* ForgetPasswordView.xib in Resources */,
+				599396F31835F3AC0050E1BD /* HomeView.xib in Resources */,
 				5976EC7A1833CD27001C14FA /* InfoPlist.strings in Resources */,
+				5993970B1835F7DA0050E1BD /* RegisterView.xib in Resources */,
+				5993971E1835F8AA0050E1BD /* YouthView.xib in Resources */,
+				599397281835F8C40050E1BD /* HelpView.xib in Resources */,
+				599397191835F8940050E1BD /* MapView.xib in Resources */,
+				599396FF1835F7620050E1BD /* LoginView.xib in Resources */,
+				599397231835F8B70050E1BD /* ShopView.xib in Resources */,
 				5976EC831833CD27001C14FA /* Main.storyboard in Resources */,
+				5993972E1835F8DA0050E1BD /* MoreView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,9 +455,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5993972D1835F8DA0050E1BD /* MoreView.m in Sources */,
+				5993971D1835F8AA0050E1BD /* YouthView.m in Sources */,
+				599397271835F8C40050E1BD /* HelpView.m in Sources */,
+				5993970A1835F7DA0050E1BD /* RegisterView.m in Sources */,
+				599396FE1835F7620050E1BD /* LoginView.m in Sources */,
 				5976EC861833CD27001C14FA /* ViewController.m in Sources */,
+				599397221835F8B70050E1BD /* ShopView.m in Sources */,
 				5976EC801833CD27001C14FA /* AppDelegate.m in Sources */,
+				5993970F1835F7F90050E1BD /* ForgetPasswordView.m in Sources */,
+				599396F21835F3AC0050E1BD /* HomeView.m in Sources */,
 				5976EC7C1833CD27001C14FA /* main.m in Sources */,
+				599397181835F8940050E1BD /* MapView.m in Sources */,
+				599396EE1835F38D0050E1BD /* BaseView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +676,7 @@
 				5976ECA01833CD27001C14FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5976ECA11833CD27001C14FA /* Build configuration list for PBXNativeTarget "campusTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +685,7 @@
 				5976ECA31833CD27001C14FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
