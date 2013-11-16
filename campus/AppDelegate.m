@@ -7,12 +7,14 @@
 //
 
 #import "AppDelegate.h"
-
+#import "OpeningAnimation.h"
 @implementation AppDelegate
-
+@synthesize openingAnimation;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.openingAnimation = [[OpeningAnimation alloc] initWithNibName:@"OpeningAnimation" bundle:nil];
+    self.window.rootViewController = openingAnimation;
     return YES;
 }
 							
