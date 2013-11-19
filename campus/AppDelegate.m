@@ -7,18 +7,15 @@
 //
 
 #import "AppDelegate.h"
-#import "OpeningAnimation.h"
 #import "HomeView.h"
 @implementation AppDelegate
-@synthesize openingAnimation;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-//    self.openingAnimation = [[OpeningAnimation alloc] initWithNibName:@"OpeningAnimation" bundle:nil];
-//    self.window.rootViewController = openingAnimation;
-    HomeView *home=[HomeView new];
+    HomeView *home=[[HomeView alloc] initWithNibName:@"HomeView" bundle:nil];
     _navigationRoot=[[UINavigationController alloc] initWithRootViewController:home];
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController=_navigationRoot;
+    _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    _window.rootViewController=_navigationRoot;
+    [_window makeKeyAndVisible];
     return YES;
 }
 							

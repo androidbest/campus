@@ -7,7 +7,6 @@
 //
 
 #import "BaseView.h"
-
+#import <MediaPlayer/MediaPlayer.h>
 @interface HomeView : BaseView
-
 @end

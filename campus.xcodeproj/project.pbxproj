@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18D88A15183757D5003B79FC /* OpeningAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D88A13183757D5003B79FC /* OpeningAnimation.m */; };
-		18D88A16183757D5003B79FC /* OpeningAnimation.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D88A14183757D5003B79FC /* OpeningAnimation.xib */; };
 		18D88A1E183759CF003B79FC /* welcome.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 18D88A1D183759CF003B79FC /* welcome.mp4 */; };
 		5922BB63183A173C00168EDF /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5922BB62183A173C00168EDF /* MediaPlayer.framework */; };
 		5976EC701833CD27001C14FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5976EC6F1833CD27001C14FA /* Foundation.framework */; };
@@ -17,8 +15,6 @@
 		5976EC7A1833CD27001C14FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5976EC781833CD27001C14FA /* InfoPlist.strings */; };
 		5976EC7C1833CD27001C14FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5976EC7B1833CD27001C14FA /* main.m */; };
 		5976EC801833CD27001C14FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5976EC7F1833CD27001C14FA /* AppDelegate.m */; };
-		5976EC831833CD27001C14FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5976EC811833CD27001C14FA /* Main.storyboard */; };
-		5976EC861833CD27001C14FA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5976EC851833CD27001C14FA /* ViewController.m */; };
 		5976EC881833CD27001C14FA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5976EC871833CD27001C14FA /* Images.xcassets */; };
 		5976EC8F1833CD27001C14FA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5976EC8E1833CD27001C14FA /* XCTest.framework */; };
 		5976EC901833CD27001C14FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5976EC6F1833CD27001C14FA /* Foundation.framework */; };
@@ -44,6 +40,8 @@
 		599397281835F8C40050E1BD /* HelpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 599397261835F8C40050E1BD /* HelpView.xib */; };
 		5993972D1835F8DA0050E1BD /* MoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5993972B1835F8DA0050E1BD /* MoreView.m */; };
 		5993972E1835F8DA0050E1BD /* MoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5993972C1835F8DA0050E1BD /* MoreView.xib */; };
+		5996F7BE183B824A00FAFEB8 /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5996F7BD183B824A00FAFEB8 /* BaseController.m */; };
+		5996F7C1183B82D600FAFEB8 /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5996F7C0183B82D600FAFEB8 /* HomeController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,9 +55,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		18D88A12183757D5003B79FC /* OpeningAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpeningAnimation.h; sourceTree = "<group>"; };
-		18D88A13183757D5003B79FC /* OpeningAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpeningAnimation.m; sourceTree = "<group>"; };
-		18D88A14183757D5003B79FC /* OpeningAnimation.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpeningAnimation.xib; sourceTree = "<group>"; };
 		18D88A1D183759CF003B79FC /* welcome.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = welcome.mp4; sourceTree = "<group>"; };
 		5922BB62183A173C00168EDF /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		5976EC6C1833CD27001C14FA /* campus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = campus.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,9 +67,6 @@
 		5976EC7D1833CD27001C14FA /* campus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "campus-Prefix.pch"; sourceTree = "<group>"; };
 		5976EC7E1833CD27001C14FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5976EC7F1833CD27001C14FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5976EC821833CD27001C14FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5976EC841833CD27001C14FA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5976EC851833CD27001C14FA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5976EC871833CD27001C14FA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5976EC8D1833CD27001C14FA /* campusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = campusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5976EC8E1833CD27001C14FA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -110,6 +102,11 @@
 		5993972A1835F8DA0050E1BD /* MoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreView.h; sourceTree = "<group>"; };
 		5993972B1835F8DA0050E1BD /* MoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreView.m; sourceTree = "<group>"; };
 		5993972C1835F8DA0050E1BD /* MoreView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreView.xib; sourceTree = "<group>"; };
+		5996F7B8183B79AB00FAFEB8 /* ControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerProtocol.h; sourceTree = "<group>"; };
+		5996F7BC183B824A00FAFEB8 /* BaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
+		5996F7BD183B824A00FAFEB8 /* BaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
+		5996F7BF183B82D600FAFEB8 /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
+		5996F7C0183B82D600FAFEB8 /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,9 +175,6 @@
 				599396E81835D0F50050E1BD /* model */,
 				5976EC7E1833CD27001C14FA /* AppDelegate.h */,
 				5976EC7F1833CD27001C14FA /* AppDelegate.m */,
-				5976EC811833CD27001C14FA /* Main.storyboard */,
-				5976EC841833CD27001C14FA /* ViewController.h */,
-				5976EC851833CD27001C14FA /* ViewController.m */,
 				5976EC871833CD27001C14FA /* Images.xcassets */,
 				5976EC761833CD27001C14FA /* Supporting Files */,
 			);
@@ -226,6 +220,11 @@
 		599396E91835D0FC0050E1BD /* control */ = {
 			isa = PBXGroup;
 			children = (
+				5996F7B8183B79AB00FAFEB8 /* ControllerProtocol.h */,
+				5996F7BC183B824A00FAFEB8 /* BaseController.h */,
+				5996F7BD183B824A00FAFEB8 /* BaseController.m */,
+				5996F7BF183B82D600FAFEB8 /* HomeController.h */,
+				5996F7C0183B82D600FAFEB8 /* HomeController.m */,
 			);
 			name = control;
 			sourceTree = "<group>";
@@ -246,9 +245,6 @@
 				599396EF1835F3AC0050E1BD /* HomeView.h */,
 				599396F01835F3AC0050E1BD /* HomeView.m */,
 				599396F11835F3AC0050E1BD /* HomeView.xib */,
-				18D88A12183757D5003B79FC /* OpeningAnimation.h */,
-				18D88A13183757D5003B79FC /* OpeningAnimation.m */,
-				18D88A14183757D5003B79FC /* OpeningAnimation.xib */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -444,7 +440,6 @@
 				599397101835F7F90050E1BD /* ForgetPasswordView.xib in Resources */,
 				18D88A1E183759CF003B79FC /* welcome.mp4 in Resources */,
 				599396F31835F3AC0050E1BD /* HomeView.xib in Resources */,
-				18D88A16183757D5003B79FC /* OpeningAnimation.xib in Resources */,
 				5976EC7A1833CD27001C14FA /* InfoPlist.strings in Resources */,
 				5993970B1835F7DA0050E1BD /* RegisterView.xib in Resources */,
 				5993971E1835F8AA0050E1BD /* YouthView.xib in Resources */,
@@ -452,7 +447,6 @@
 				599397191835F8940050E1BD /* MapView.xib in Resources */,
 				599396FF1835F7620050E1BD /* LoginView.xib in Resources */,
 				599397231835F8B70050E1BD /* ShopView.xib in Resources */,
-				5976EC831833CD27001C14FA /* Main.storyboard in Resources */,
 				5993972E1835F8DA0050E1BD /* MoreView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,14 +471,14 @@
 				599397271835F8C40050E1BD /* HelpView.m in Sources */,
 				5993970A1835F7DA0050E1BD /* RegisterView.m in Sources */,
 				599396FE1835F7620050E1BD /* LoginView.m in Sources */,
-				5976EC861833CD27001C14FA /* ViewController.m in Sources */,
 				599397221835F8B70050E1BD /* ShopView.m in Sources */,
-				18D88A15183757D5003B79FC /* OpeningAnimation.m in Sources */,
 				5976EC801833CD27001C14FA /* AppDelegate.m in Sources */,
+				5996F7BE183B824A00FAFEB8 /* BaseController.m in Sources */,
 				5993970F1835F7F90050E1BD /* ForgetPasswordView.m in Sources */,
 				599396F21835F3AC0050E1BD /* HomeView.m in Sources */,
 				5976EC7C1833CD27001C14FA /* main.m in Sources */,
 				599397181835F8940050E1BD /* MapView.m in Sources */,
+				5996F7C1183B82D600FAFEB8 /* HomeController.m in Sources */,
 				599396EE1835F38D0050E1BD /* BaseView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,14 +508,6 @@
 				5976EC791833CD27001C14FA /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		5976EC811833CD27001C14FA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5976EC821833CD27001C14FA /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		5976EC971833CD27001C14FA /* InfoPlist.strings */ = {
