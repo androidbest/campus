@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ControllerProtocol.h"
 @interface BaseView : UIViewController
-
+@property(strong,nonatomic)id<ControllerProtocol> controller;
 @end
