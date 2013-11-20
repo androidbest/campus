@@ -8,10 +8,12 @@
 
 #import "AppDelegate.h"
 #import "HomeView.h"
+#import "ConfigFile.h"
 @implementation AppDelegate
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    HomeView *home=[[HomeView alloc] initWithNibName:@"HomeView" bundle:nil];
+    [[ConfigFile newInstance] initData];
+    HomeView *home=[HomeView new];
     _navigationRoot=[[UINavigationController alloc] initWithRootViewController:home];
     _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     _window.rootViewController=_navigationRoot;

@@ -9,5 +9,9 @@
 #import "BaseView.h"
 
 @interface LoginView : BaseView
+@property (strong, nonatomic) IBOutlet UITextField *msisdn;
+@property (strong, nonatomic) IBOutlet UITextField *password;
+@property (strong, nonatomic) IBOutlet UIButton *forgetpassword;
+@property (strong, nonatomic) IBOutlet UIButton *loginBtn;
 
 @end

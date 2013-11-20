@@ -8,6 +8,7 @@
 
 #import "HomeView.h"
 #import "HomeController.h"
+#import "NavigationTitleView.h"
 @interface HomeView ()
 
 @end
@@ -35,10 +36,19 @@
         [self playMovie];
     }
     
-//    self.navigationController.navigationBar.topItem
+    //top样式
+    CGRect rect=CGRectMake(0, 0, ScreenWidth, NavigationBarHeight);
+    NavigationTitleView *titleView=[[NavigationTitleView alloc] initWithFrame:rect];
+    self.navigationItem.titleView=titleView;
     
-    
+    [titleView.right addTarget:self.controller action:@selector(loginPage) forControlEvents:UIControlEventTouchUpInside];
 }
+
+-(void)viewWillAppear:(BOOL)animated{
+   [self.navigationController.navigationBar setBarTintColor:nil];
+}
+
+-(void)loginPage{}
 
 //视频播放
 -(void)playMovie {
