@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "ControllerProtocol.h"
+#import "BaseView.h"
 @interface BaseController : NSObject<ControllerProtocol>
-
+-(void)initBackBarButtonItem:(BaseView *)baseView;
+-(BOOL)judgeNetwork;
 @end

@@ -41,3 +41,5 @@
 
 //沙盒document目录
 #define DocumentsDirectory [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES) lastObject]
+
+#define OutTime 30
