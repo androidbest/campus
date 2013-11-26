@@ -9,5 +9,7 @@
 #import "BaseController.h"
 #import "RegisterView.h"
 @interface RegisterController : BaseController
-@property(strong,nonatomic) RegisterView *registerView;
+@property (strong,nonatomic)RegisterView *registerView;
+
+-(void) initView:(NSInteger *)index;
 @end

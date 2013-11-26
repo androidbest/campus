@@ -7,10 +7,11 @@
 //
 
 #import "RegisterController.h"
-
+#import "MailRegView.h"
+#import "MobileRegView.h"
 @implementation RegisterController{
 
-    NSInteger selector;
+    
     
 }
 
@@ -20,18 +21,35 @@
     NSInteger Index = Seg.selectedSegmentIndex;
     switch (Index) {
         case 0:{
-            //新闻资讯
-            selector=0;
+            //手机注册
+            [self initView:&Index];
+            NSLog(@"test %ld",(long)Index);
         }
             break;
         case 1:{
-            //经典笑话
-            selector=1;
+            //邮箱注册
+            [self initView:&Index];
+            NSLog(@"test %ld",(long)Index);
         }
             break;
     }
     
     
+}
+
+//初始化注册视图
+-(void) initView:(NSInteger *)index{
+    if (index==0) {
+        MobileRegView *mobileRegView=[[MobileRegView alloc] initWithNibName:@"MobileRegView" bundle:nil];
+        mobileRegView.view.frame=CGRectMake(0, 100, 320,480 );
+        [self.registerView addChildViewController:mobileRegView];
+        [self.registerView.view addSubview:mobileRegView.view];
+    }else{
+        MailRegView *mailRegView=[[MailRegView alloc] initWithNibName:@"MailRegView" bundle:nil];
+        mailRegView.view.frame=CGRectMake(0, 100, 320,480 );
+        [self.registerView addChildViewController:mailRegView];
+        [self.registerView.view addSubview:mailRegView.view];
+    }
 }
 
 @end
