@@ -10,14 +10,21 @@
 #import "HomeView.h"
 #import "ConfigFile.h"
 #import "HomeView.h"
+#import "DDMenuController.h"
+#import "SideslipView.h"
 @implementation AppDelegate
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [[ConfigFile newInstance] initData];
     HomeView *home=[HomeView new];
-    _navigationRoot=[[UINavigationController alloc] initWithRootViewController:home];
+    _navigationController=[[UINavigationController alloc] initWithRootViewController:home];
+    _rootController = [[DDMenuController alloc] initWithRootViewController:_navigationController];
+    
+    SideslipView *sideslipView=[SideslipView new];
+    _rootController.leftViewController=sideslipView;
+
     _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    _window.rootViewController=_navigationRoot;
+    _window.rootViewController=_rootController;
     [_window makeKeyAndVisible];
     return YES;
 }

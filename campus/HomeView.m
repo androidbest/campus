@@ -12,14 +12,14 @@
 #import "SGFocusImageItem.h"
 #import "SGFocusImageFrame.h"
 #import "ToolUtils.h"
+#import "DDMenuController.h"
+#import "SideslipView.h"
 @interface HomeView ()
 
 @end
 
 @implementation HomeView{
     MPMoviePlayerController *movie;
-    UIScrollView *scrollView;
-    UIPageControl *pageControl;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -42,16 +42,37 @@
     }
     
     //top样式
-    CGRect rect=CGRectMake(0, 0, ScreenWidth, NavigationBarHeight);
-    NavigationTitleView *titleView=[[NavigationTitleView alloc] initWithFrame:rect];
-    self.navigationItem.titleView=titleView;
-    [titleView.right addTarget:self.controller action:@selector(loginPage) forControlEvents:UIControlEventTouchUpInside];
+//    CGRect rect=CGRectMake(0, 0, ScreenWidth, NavigationBarHeight);
+//    _navigationTitleView=[[NavigationTitleView alloc] initWithFrame:rect];
+//    self.navigationItem.titleView=_navigationTitleView;
+    
+//    UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
+//    leftButton.frame = CGRectMake(0.0, 0.0, 35.0, 30.0);
+//    [backButton setImage:[UIImage imageNamed:@"Btn_NaviBackGroud"] forState:UIControlStateNormal];
+//    [backButton setImage:[UIImage imageNamed:@"Btn_NaviBackGroud"] forState:UIControlStateHighlighted];
+//    [backButton addTarget:self.controller action:@selector(LeftDown) forControlEvents:UIControlEventTouchUpInside];
+//    self.leftBtn=backButton;
+//    UIBarButtonItem *temporaryBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
+//    temporaryBarButtonItem.style = UIBarButtonItemStylePlain;
+//    self.navigationItem.leftBarButtonItem=temporaryBarButtonItem;
+//    if([self isKindOfClass:[LoginView class]]){
+//        backButton.hidden=YES;
+//    }
+
+//     _left=[UIButton buttonWithType:UIButtonTypeCustom];
+//     _left.frame=CGRectMake(5,10,28,28);
+//     [_left setBackgroundImage:[UIImage imageNamed:@"home_topleft"] forState:UIControlStateNormal];
+//     [self addSubview:_left];
+    
+    
+    _rightBtn=[UIButton buttonWithType:UIButtonTypeCustom];
+    _rightBtn.frame=CGRectMake(0,0,28,28);
+    [_rightBtn setBackgroundImage:[UIImage imageNamed:@"home_topright"] forState:UIControlStateNormal];
+    [_rightBtn addTarget:self.controller action:@selector(loginPage) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem=[[UIBarButtonItem alloc] initWithCustomView:_rightBtn];
+    self.navigationItem.title=@"青春向阳开";
     self.automaticallyAdjustsScrollViewInsets=NO;
-    
-    
-    
-    
-    
+
     //广告宣传
     NSMutableArray *itempArray = [NSMutableArray array];
     SGFocusImageItem *item0 = [[SGFocusImageItem alloc] initWithTitle:@"-1" image:@"3" tag:-1];
@@ -68,17 +89,15 @@
     [bannerView scrollToIndex:0];
     [self.view addSubview:bannerView];
     
-    
     SGFocusImageFrame *bannerView1 = [[SGFocusImageFrame alloc] initWithFrame:CGRectMake(0, 138, ScreenWidth, 169) delegate:self.controller imageItems:itempArray isAuto:YES];
     [bannerView1 scrollToIndex:0];
     [self.view addSubview:bannerView1];
-  
-
 }
 
 
 -(void)viewWillAppear:(BOOL)animated{
    [self.navigationController.navigationBar setBarTintColor:nil];
+   [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor],NSForegroundColorAttributeName,[UIFont boldSystemFontOfSize:20],NSFontAttributeName,nil]];
 }
 
 -(void)loginPage{}

@@ -9,10 +9,6 @@
 /* Begin PBXBuildFile section */
 		18D88A1E183759CF003B79FC /* welcome.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 18D88A1D183759CF003B79FC /* welcome.mp4 */; };
 		18E35C2F18447106001B6331 /* RegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E35C2E18447106001B6331 /* RegisterController.m */; };
-		18E35C4218448313001B6331 /* MobileRegView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E35C4018448313001B6331 /* MobileRegView.m */; };
-		18E35C4318448313001B6331 /* MobileRegView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E35C4118448313001B6331 /* MobileRegView.xib */; };
-		18E35C4718448363001B6331 /* MailRegView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E35C4518448363001B6331 /* MailRegView.m */; };
-		18E35C4818448363001B6331 /* MailRegView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E35C4618448363001B6331 /* MailRegView.xib */; };
 		5922BB63183A173C00168EDF /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5922BB62183A173C00168EDF /* MediaPlayer.framework */; };
 		595BBE21183D207000BFAF47 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 595BBE20183D207000BFAF47 /* Reachability.m */; };
 		595BBE23183D20A600BFAF47 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 595BBE22183D20A600BFAF47 /* Security.framework */; };
@@ -30,6 +26,14 @@
 		595FE2D018444D270068C4C2 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 595FE2CC18444D270068C4C2 /* second.png */; };
 		595FE2D118444D270068C4C2 /* third.png in Resources */ = {isa = PBXBuildFile; fileRef = 595FE2CD18444D270068C4C2 /* third.png */; };
 		595FE2D218444D270068C4C2 /* four.png in Resources */ = {isa = PBXBuildFile; fileRef = 595FE2CE18444D270068C4C2 /* four.png */; };
+		595FE2F31844AFDE0068C4C2 /* DDMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 595FE2F21844AFDE0068C4C2 /* DDMenuController.m */; };
+		595FE2F91844B00A0068C4C2 /* SideslipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 595FE2F61844B00A0068C4C2 /* SideslipView.m */; };
+		595FE2FA1844B00A0068C4C2 /* SideslipView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 595FE2F71844B00A0068C4C2 /* SideslipView.xib */; };
+		595FE2FD1844B0430068C4C2 /* SideslipController.m in Sources */ = {isa = PBXBuildFile; fileRef = 595FE2FC1844B0430068C4C2 /* SideslipController.m */; };
+		595FE3041844B2010068C4C2 /* MailRegView.m in Sources */ = {isa = PBXBuildFile; fileRef = 595FE2FF1844B2010068C4C2 /* MailRegView.m */; };
+		595FE3051844B2010068C4C2 /* MailRegView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 595FE3001844B2010068C4C2 /* MailRegView.xib */; };
+		595FE3061844B2010068C4C2 /* MobileRegView.m in Sources */ = {isa = PBXBuildFile; fileRef = 595FE3021844B2010068C4C2 /* MobileRegView.m */; };
+		595FE3071844B2010068C4C2 /* MobileRegView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 595FE3031844B2010068C4C2 /* MobileRegView.xib */; };
 		5976EC701833CD27001C14FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5976EC6F1833CD27001C14FA /* Foundation.framework */; };
 		5976EC721833CD27001C14FA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5976EC711833CD27001C14FA /* CoreGraphics.framework */; };
 		5976EC741833CD27001C14FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5976EC731833CD27001C14FA /* UIKit.framework */; };
@@ -84,12 +88,6 @@
 		18D88A1D183759CF003B79FC /* welcome.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = welcome.mp4; sourceTree = "<group>"; };
 		18E35C2D18447106001B6331 /* RegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterController.h; sourceTree = "<group>"; };
 		18E35C2E18447106001B6331 /* RegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterController.m; sourceTree = "<group>"; };
-		18E35C3F18448313001B6331 /* MobileRegView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobileRegView.h; sourceTree = "<group>"; };
-		18E35C4018448313001B6331 /* MobileRegView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MobileRegView.m; sourceTree = "<group>"; };
-		18E35C4118448313001B6331 /* MobileRegView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MobileRegView.xib; sourceTree = "<group>"; };
-		18E35C4418448363001B6331 /* MailRegView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailRegView.h; sourceTree = "<group>"; };
-		18E35C4518448363001B6331 /* MailRegView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailRegView.m; sourceTree = "<group>"; };
-		18E35C4618448363001B6331 /* MailRegView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MailRegView.xib; sourceTree = "<group>"; };
 		5922BB62183A173C00168EDF /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		595BBE1F183D207000BFAF47 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		595BBE20183D207000BFAF47 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
@@ -113,6 +111,19 @@
 		595FE2CC18444D270068C4C2 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		595FE2CD18444D270068C4C2 /* third.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = third.png; sourceTree = "<group>"; };
 		595FE2CE18444D270068C4C2 /* four.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = four.png; sourceTree = "<group>"; };
+		595FE2F11844AFDE0068C4C2 /* DDMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMenuController.h; sourceTree = "<group>"; };
+		595FE2F21844AFDE0068C4C2 /* DDMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMenuController.m; sourceTree = "<group>"; };
+		595FE2F51844B00A0068C4C2 /* SideslipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideslipView.h; sourceTree = "<group>"; };
+		595FE2F61844B00A0068C4C2 /* SideslipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideslipView.m; sourceTree = "<group>"; };
+		595FE2F71844B00A0068C4C2 /* SideslipView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideslipView.xib; sourceTree = "<group>"; };
+		595FE2FB1844B0430068C4C2 /* SideslipController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideslipController.h; sourceTree = "<group>"; };
+		595FE2FC1844B0430068C4C2 /* SideslipController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideslipController.m; sourceTree = "<group>"; };
+		595FE2FE1844B2010068C4C2 /* MailRegView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailRegView.h; sourceTree = "<group>"; };
+		595FE2FF1844B2010068C4C2 /* MailRegView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailRegView.m; sourceTree = "<group>"; };
+		595FE3001844B2010068C4C2 /* MailRegView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MailRegView.xib; sourceTree = "<group>"; };
+		595FE3011844B2010068C4C2 /* MobileRegView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobileRegView.h; sourceTree = "<group>"; };
+		595FE3021844B2010068C4C2 /* MobileRegView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MobileRegView.m; sourceTree = "<group>"; };
+		595FE3031844B2010068C4C2 /* MobileRegView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MobileRegView.xib; sourceTree = "<group>"; };
 		5976EC6C1833CD27001C14FA /* campus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = campus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5976EC6F1833CD27001C14FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5976EC711833CD27001C14FA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -216,6 +227,15 @@
 				595BBE31183D28CE00BFAF47 /* LoginController.m */,
 			);
 			name = login;
+			sourceTree = "<group>";
+		};
+		595FE2F01844AFCF0068C4C2 /* DDMenu */ = {
+			isa = PBXGroup;
+			children = (
+				595FE2F11844AFDE0068C4C2 /* DDMenuController.h */,
+				595FE2F21844AFDE0068C4C2 /* DDMenuController.m */,
+			);
+			name = DDMenu;
 			sourceTree = "<group>";
 		};
 		5976EC631833CD27001C14FA = {
@@ -325,6 +345,8 @@
 				5996F7BD183B824A00FAFEB8 /* BaseController.m */,
 				5996F7BF183B82D600FAFEB8 /* HomeController.h */,
 				5996F7C0183B82D600FAFEB8 /* HomeController.m */,
+				595FE2FB1844B0430068C4C2 /* SideslipController.h */,
+				595FE2FC1844B0430068C4C2 /* SideslipController.m */,
 			);
 			name = control;
 			sourceTree = "<group>";
@@ -345,6 +367,9 @@
 				599396EF1835F3AC0050E1BD /* HomeView.h */,
 				599396F01835F3AC0050E1BD /* HomeView.m */,
 				599396F11835F3AC0050E1BD /* HomeView.xib */,
+				595FE2F51844B00A0068C4C2 /* SideslipView.h */,
+				595FE2F61844B00A0068C4C2 /* SideslipView.m */,
+				595FE2F71844B00A0068C4C2 /* SideslipView.xib */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -352,6 +377,7 @@
 		599396EB1835E9CC0050E1BD /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				595FE2F01844AFCF0068C4C2 /* DDMenu */,
 				597E017D183F61E80047873B /* SGFocus */,
 				595BBE26183D210200BFAF47 /* ToolUtils.h */,
 				595BBE27183D210200BFAF47 /* ToolUtils.m */,
@@ -380,15 +406,15 @@
 		599397001835F7720050E1BD /* register */ = {
 			isa = PBXGroup;
 			children = (
+				595FE2FE1844B2010068C4C2 /* MailRegView.h */,
+				595FE2FF1844B2010068C4C2 /* MailRegView.m */,
+				595FE3001844B2010068C4C2 /* MailRegView.xib */,
+				595FE3011844B2010068C4C2 /* MobileRegView.h */,
+				595FE3021844B2010068C4C2 /* MobileRegView.m */,
+				595FE3031844B2010068C4C2 /* MobileRegView.xib */,
 				599397071835F7DA0050E1BD /* RegisterView.h */,
 				599397081835F7DA0050E1BD /* RegisterView.m */,
 				599397091835F7DA0050E1BD /* RegisterView.xib */,
-				18E35C3F18448313001B6331 /* MobileRegView.h */,
-				18E35C4018448313001B6331 /* MobileRegView.m */,
-				18E35C4118448313001B6331 /* MobileRegView.xib */,
-				18E35C4418448363001B6331 /* MailRegView.h */,
-				18E35C4518448363001B6331 /* MailRegView.m */,
-				18E35C4618448363001B6331 /* MailRegView.xib */,
 			);
 			name = register;
 			sourceTree = "<group>";
@@ -572,18 +598,19 @@
 				595FE2D018444D270068C4C2 /* second.png in Resources */,
 				599396F31835F3AC0050E1BD /* HomeView.xib in Resources */,
 				5976EC7A1833CD27001C14FA /* InfoPlist.strings in Resources */,
-				18E35C4318448313001B6331 /* MobileRegView.xib in Resources */,
 				595FE2D118444D270068C4C2 /* third.png in Resources */,
 				5993970B1835F7DA0050E1BD /* RegisterView.xib in Resources */,
 				5993971E1835F8AA0050E1BD /* YouthView.xib in Resources */,
 				599397281835F8C40050E1BD /* HelpView.xib in Resources */,
+				595FE2FA1844B00A0068C4C2 /* SideslipView.xib in Resources */,
 				599397191835F8940050E1BD /* MapView.xib in Resources */,
 				59B99F80184334B9002F6F3C /* 1.png in Resources */,
 				595CBF32183C931900628E41 /* home_topright.png in Resources */,
 				595CBF34183C933100628E41 /* common.plist in Resources */,
 				599396FF1835F7620050E1BD /* LoginView.xib in Resources */,
 				599397231835F8B70050E1BD /* ShopView.xib in Resources */,
-				18E35C4818448363001B6331 /* MailRegView.xib in Resources */,
+				595FE3071844B2010068C4C2 /* MobileRegView.xib in Resources */,
+				595FE3051844B2010068C4C2 /* MailRegView.xib in Resources */,
 				595CBF31183C931900628E41 /* home_topleft.png in Resources */,
 				595FE2D218444D270068C4C2 /* four.png in Resources */,
 				5993972E1835F8DA0050E1BD /* MoreView.xib in Resources */,
@@ -608,21 +635,24 @@
 				5993972D1835F8DA0050E1BD /* MoreView.m in Sources */,
 				5993971D1835F8AA0050E1BD /* YouthView.m in Sources */,
 				599397271835F8C40050E1BD /* HelpView.m in Sources */,
-				18E35C4718448363001B6331 /* MailRegView.m in Sources */,
 				5993970A1835F7DA0050E1BD /* RegisterView.m in Sources */,
+				595FE2F91844B00A0068C4C2 /* SideslipView.m in Sources */,
 				599396FE1835F7620050E1BD /* LoginView.m in Sources */,
+				595FE2F31844AFDE0068C4C2 /* DDMenuController.m in Sources */,
+				595FE3061844B2010068C4C2 /* MobileRegView.m in Sources */,
 				59B99F9118435269002F6F3C /* SGFocusImageItem.m in Sources */,
 				595BBE32183D28CE00BFAF47 /* LoginController.m in Sources */,
 				595CBF2C183C63AB00628E41 /* NavigationTitleView.m in Sources */,
 				599397221835F8B70050E1BD /* ShopView.m in Sources */,
+				595FE3041844B2010068C4C2 /* MailRegView.m in Sources */,
 				5976EC801833CD27001C14FA /* AppDelegate.m in Sources */,
 				5996F7BE183B824A00FAFEB8 /* BaseController.m in Sources */,
-				18E35C4218448313001B6331 /* MobileRegView.m in Sources */,
 				5993970F1835F7F90050E1BD /* ForgetPasswordView.m in Sources */,
 				595BBE21183D207000BFAF47 /* Reachability.m in Sources */,
 				18E35C2F18447106001B6331 /* RegisterController.m in Sources */,
 				599396F21835F3AC0050E1BD /* HomeView.m in Sources */,
 				5976EC7C1833CD27001C14FA /* main.m in Sources */,
+				595FE2FD1844B0430068C4C2 /* SideslipController.m in Sources */,
 				599397181835F8940050E1BD /* MapView.m in Sources */,
 				595BBE2C183D210200BFAF47 /* ToolUtils.m in Sources */,
 				595BBE2D183D210200BFAF47 /* ConfigFile.m in Sources */,

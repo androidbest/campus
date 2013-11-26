@@ -8,5 +8,9 @@
 
 #import "BaseView.h"
 #import <MediaPlayer/MediaPlayer.h>
+#import "NavigationTitleView.h"
 @interface HomeView : BaseView
+@property (strong ,nonatomic)NavigationTitleView * navigationTitleView;
+@property (strong, nonatomic)UIButton *leftBtn;
+@property (strong, nonatomic)UIButton *rightBtn;
 @end

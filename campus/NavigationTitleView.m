@@ -28,15 +28,15 @@
 //        _title.layer.borderWidth = 1.0;
         [self addSubview:_title];
         
-        _left=[UIButton buttonWithType:UIButtonTypeCustom];
-        _left.frame=CGRectMake(5,10,28,28);
-        [_left setBackgroundImage:[UIImage imageNamed:@"home_topleft"] forState:UIControlStateNormal];
-        [self addSubview:_left];
+//        _left=[UIButton buttonWithType:UIButtonTypeCustom];
+//        _left.frame=CGRectMake(5,10,28,28);
+//        [_left setBackgroundImage:[UIImage imageNamed:@"home_topleft"] forState:UIControlStateNormal];
+//        [self addSubview:_left];
         
-        _right=[UIButton buttonWithType:UIButtonTypeCustom];
-        _right.frame=CGRectMake(ScreenWidth-50,10,28,28);
-        [_right setBackgroundImage:[UIImage imageNamed:@"home_topright"] forState:UIControlStateNormal];
-        [self addSubview:_right];
+//        _right=[UIButton buttonWithType:UIButtonTypeCustom];
+//        _right.frame=CGRectMake(ScreenWidth-50,10,28,28);
+//        [_right setBackgroundImage:[UIImage imageNamed:@"home_topright"] forState:UIControlStateNormal];
+//        [self addSubview:_right];
     }
     return self;
 }

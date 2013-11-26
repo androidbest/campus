@@ -37,10 +37,6 @@
 //    self.navigationController.navigationBar.
 //    [[UINavigationBar appearance] setBarTintColor:[UIColor yellowColor]];
     self.navigationItem.title=@"进入校园";
-    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0.01 green:0.39 blue:0.86 alpha:1.0]];
-    [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
-    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,[UIFont boldSystemFontOfSize:20],NSFontAttributeName,nil]];
-    
     UIButton *rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     rightBtn.frame = CGRectMake(0.0, 0.0, 28.0, 28.0);
     [rightBtn setImage:[UIImage imageNamed:@"home_topright"] forState:UIControlStateNormal];
@@ -49,6 +45,12 @@
     temporaryBarButtonItem.style = UIBarButtonItemStylePlain;
     self.navigationItem.rightBarButtonItem=temporaryBarButtonItem;
     [_msisdn becomeFirstResponder];
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0.01 green:0.39 blue:0.86 alpha:1.0]];
+    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,[UIFont boldSystemFontOfSize:20],NSFontAttributeName,nil]];
+    [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
 }
 
 -(void)registerBtn{}
