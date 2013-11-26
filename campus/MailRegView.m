@@ -1,18 +1,18 @@
 //
-//  mailRegView.m
+//  MailRegView.m
 //  campus
 //
 //  Created by shijin on 13-11-26.
 //  Copyright (c) 2013年 campus. All rights reserved.
 //
 
-#import "mailRegView.h"
+#import "MailRegView.h"
 
-@interface mailRegView ()
+@interface MailRegView ()
 
 @end
 
-@implementation mailRegView
+@implementation MailRegView
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

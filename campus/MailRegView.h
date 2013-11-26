@@ -1,5 +1,5 @@
 //
-//  mobileRegView.h
+//  MailRegView.h
 //  campus
 //
 //  Created by shijin on 13-11-26.
@@ -8,6 +8,6 @@
 
 #import "BaseView.h"
 
-@interface mobileRegView : BaseView
+@interface MailRegView : BaseView
 
 @end

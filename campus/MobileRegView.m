@@ -1,18 +1,18 @@
 //
-//  mobileRegView.m
+//  MobileRegView.m
 //  campus
 //
 //  Created by shijin on 13-11-26.
 //  Copyright (c) 2013年 campus. All rights reserved.
 //
 
-#import "mobileRegView.h"
+#import "MobileRegView.h"
 
-@interface mobileRegView ()
+@interface MobileRegView ()
 
 @end
 
-@implementation mobileRegView
+@implementation MobileRegView
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
