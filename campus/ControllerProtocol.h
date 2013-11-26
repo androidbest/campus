@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-@protocol ControllerProtocol <UITextFieldDelegate,UITableViewDataSource,UITableViewDelegate,UITextViewDelegate,UISearchBarDelegate,UIWebViewDelegate,UIActionSheetDelegate,UIAlertViewDelegate>
+#import "SGFocusImageFrame.h"
+@protocol ControllerProtocol <UITextFieldDelegate,UITableViewDataSource,UITableViewDelegate,UITextViewDelegate,UISearchBarDelegate,UIWebViewDelegate,UIActionSheetDelegate,UIAlertViewDelegate,SGFocusImageFrameDelegate>
 @optional
 - (void)initWithData;
 //初始化进度条

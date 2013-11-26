@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "HomeView.h"
 #import "ConfigFile.h"
+#import "HomeView.h"
 @implementation AppDelegate
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

@@ -29,7 +29,7 @@
         [self addSubview:_title];
         
         _left=[UIButton buttonWithType:UIButtonTypeCustom];
-        _left.frame=CGRectMake(0,10,28,28);
+        _left.frame=CGRectMake(5,10,28,28);
         [_left setBackgroundImage:[UIImage imageNamed:@"home_topleft"] forState:UIControlStateNormal];
         [self addSubview:_left];
         

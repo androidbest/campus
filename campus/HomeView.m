@@ -9,12 +9,17 @@
 #import "HomeView.h"
 #import "HomeController.h"
 #import "NavigationTitleView.h"
+#import "SGFocusImageItem.h"
+#import "SGFocusImageFrame.h"
+#import "ToolUtils.h"
 @interface HomeView ()
 
 @end
 
 @implementation HomeView{
     MPMoviePlayerController *movie;
+    UIScrollView *scrollView;
+    UIPageControl *pageControl;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -40,9 +45,37 @@
     CGRect rect=CGRectMake(0, 0, ScreenWidth, NavigationBarHeight);
     NavigationTitleView *titleView=[[NavigationTitleView alloc] initWithFrame:rect];
     self.navigationItem.titleView=titleView;
-    
     [titleView.right addTarget:self.controller action:@selector(loginPage) forControlEvents:UIControlEventTouchUpInside];
+    self.automaticallyAdjustsScrollViewInsets=NO;
+    
+    
+    
+    
+    
+    //广告宣传
+    NSMutableArray *itempArray = [NSMutableArray array];
+    SGFocusImageItem *item0 = [[SGFocusImageItem alloc] initWithTitle:@"-1" image:@"3" tag:-1];
+    [itempArray addObject:item0];
+    int length=3;
+    for (int i = 0 ; i < length; i++)
+    {
+        SGFocusImageItem *item = [[SGFocusImageItem alloc] initWithTitle:[ToolUtils numToString:i] image:[NSString stringWithFormat:@"%d",i+1] tag:i];
+        [itempArray addObject:item];
+    }
+    SGFocusImageItem *item3 = [[SGFocusImageItem alloc] initWithTitle:@"3" image:@"1" tag:3];
+    [itempArray addObject:item3];
+    SGFocusImageFrame *bannerView = [[SGFocusImageFrame alloc] initWithFrame:CGRectMake(0, 66, ScreenWidth, 70) delegate:self.controller imageItems:itempArray isAuto:YES];
+    [bannerView scrollToIndex:0];
+    [self.view addSubview:bannerView];
+    
+    
+    SGFocusImageFrame *bannerView1 = [[SGFocusImageFrame alloc] initWithFrame:CGRectMake(0, 138, ScreenWidth, 169) delegate:self.controller imageItems:itempArray isAuto:YES];
+    [bannerView1 scrollToIndex:0];
+    [self.view addSubview:bannerView1];
+  
+
 }
+
 
 -(void)viewWillAppear:(BOOL)animated{
    [self.navigationController.navigationBar setBarTintColor:nil];
@@ -88,9 +121,9 @@
                                                   object:theMovie];
     
     
-//    NSUserDefaults *appConfig=[NSUserDefaults standardUserDefaults];
-//    [appConfig setBool:YES forKey:@"isLaunch"];
-//    [appConfig synchronize];
+    NSUserDefaults *appConfig=[NSUserDefaults standardUserDefaults];
+    [appConfig setBool:YES forKey:@"isLaunch"];
+    [appConfig synchronize];
     
     [UIView animateWithDuration:0.5 animations:
      ^{
