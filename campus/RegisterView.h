@@ -12,4 +12,6 @@
 
 @property (strong, nonatomic) IBOutlet UISegmentedControl *segmentControl;
 
+
+
 @end
