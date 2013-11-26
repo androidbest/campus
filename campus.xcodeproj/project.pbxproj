@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		18D88A1E183759CF003B79FC /* welcome.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 18D88A1D183759CF003B79FC /* welcome.mp4 */; };
+		18E35C2F18447106001B6331 /* RegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E35C2E18447106001B6331 /* RegisterController.m */; };
+		18E35C38184478D0001B6331 /* mailRegView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E35C36184478D0001B6331 /* mailRegView.m */; };
+		18E35C39184478D0001B6331 /* mailRegView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E35C37184478D0001B6331 /* mailRegView.xib */; };
+		18E35C3D18447923001B6331 /* mobileRegView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E35C3B18447923001B6331 /* mobileRegView.m */; };
+		18E35C3E18447923001B6331 /* mobileRegView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E35C3C18447923001B6331 /* mobileRegView.xib */; };
 		5922BB63183A173C00168EDF /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5922BB62183A173C00168EDF /* MediaPlayer.framework */; };
 		595BBE21183D207000BFAF47 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 595BBE20183D207000BFAF47 /* Reachability.m */; };
 		595BBE23183D20A600BFAF47 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 595BBE22183D20A600BFAF47 /* Security.framework */; };
@@ -77,6 +82,14 @@
 
 /* Begin PBXFileReference section */
 		18D88A1D183759CF003B79FC /* welcome.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = welcome.mp4; sourceTree = "<group>"; };
+		18E35C2D18447106001B6331 /* RegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterController.h; sourceTree = "<group>"; };
+		18E35C2E18447106001B6331 /* RegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterController.m; sourceTree = "<group>"; };
+		18E35C35184478D0001B6331 /* mailRegView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mailRegView.h; sourceTree = "<group>"; };
+		18E35C36184478D0001B6331 /* mailRegView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mailRegView.m; sourceTree = "<group>"; };
+		18E35C37184478D0001B6331 /* mailRegView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mailRegView.xib; sourceTree = "<group>"; };
+		18E35C3A18447923001B6331 /* mobileRegView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mobileRegView.h; sourceTree = "<group>"; };
+		18E35C3B18447923001B6331 /* mobileRegView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mobileRegView.m; sourceTree = "<group>"; };
+		18E35C3C18447923001B6331 /* mobileRegView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mobileRegView.xib; sourceTree = "<group>"; };
 		5922BB62183A173C00168EDF /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		595BBE1F183D207000BFAF47 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		595BBE20183D207000BFAF47 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
@@ -187,6 +200,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18E35C2C184470A1001B6331 /* register */ = {
+			isa = PBXGroup;
+			children = (
+				18E35C2D18447106001B6331 /* RegisterController.h */,
+				18E35C2E18447106001B6331 /* RegisterController.m */,
+			);
+			name = register;
+			sourceTree = "<group>";
+		};
 		595BBE2F183D28B800BFAF47 /* login */ = {
 			isa = PBXGroup;
 			children = (
@@ -296,6 +318,7 @@
 		599396E91835D0FC0050E1BD /* control */ = {
 			isa = PBXGroup;
 			children = (
+				18E35C2C184470A1001B6331 /* register */,
 				595BBE2F183D28B800BFAF47 /* login */,
 				5996F7B8183B79AB00FAFEB8 /* ControllerProtocol.h */,
 				5996F7BC183B824A00FAFEB8 /* BaseController.h */,
@@ -360,6 +383,12 @@
 				599397071835F7DA0050E1BD /* RegisterView.h */,
 				599397081835F7DA0050E1BD /* RegisterView.m */,
 				599397091835F7DA0050E1BD /* RegisterView.xib */,
+				18E35C35184478D0001B6331 /* mailRegView.h */,
+				18E35C36184478D0001B6331 /* mailRegView.m */,
+				18E35C37184478D0001B6331 /* mailRegView.xib */,
+				18E35C3A18447923001B6331 /* mobileRegView.h */,
+				18E35C3B18447923001B6331 /* mobileRegView.m */,
+				18E35C3C18447923001B6331 /* mobileRegView.xib */,
 			);
 			name = register;
 			sourceTree = "<group>";
@@ -546,12 +575,14 @@
 				595FE2D118444D270068C4C2 /* third.png in Resources */,
 				5993970B1835F7DA0050E1BD /* RegisterView.xib in Resources */,
 				5993971E1835F8AA0050E1BD /* YouthView.xib in Resources */,
+				18E35C39184478D0001B6331 /* mailRegView.xib in Resources */,
 				599397281835F8C40050E1BD /* HelpView.xib in Resources */,
 				599397191835F8940050E1BD /* MapView.xib in Resources */,
 				59B99F80184334B9002F6F3C /* 1.png in Resources */,
 				595CBF32183C931900628E41 /* home_topright.png in Resources */,
 				595CBF34183C933100628E41 /* common.plist in Resources */,
 				599396FF1835F7620050E1BD /* LoginView.xib in Resources */,
+				18E35C3E18447923001B6331 /* mobileRegView.xib in Resources */,
 				599397231835F8B70050E1BD /* ShopView.xib in Resources */,
 				595CBF31183C931900628E41 /* home_topleft.png in Resources */,
 				595FE2D218444D270068C4C2 /* four.png in Resources */,
@@ -586,7 +617,10 @@
 				5976EC801833CD27001C14FA /* AppDelegate.m in Sources */,
 				5996F7BE183B824A00FAFEB8 /* BaseController.m in Sources */,
 				5993970F1835F7F90050E1BD /* ForgetPasswordView.m in Sources */,
+				18E35C3D18447923001B6331 /* mobileRegView.m in Sources */,
 				595BBE21183D207000BFAF47 /* Reachability.m in Sources */,
+				18E35C2F18447106001B6331 /* RegisterController.m in Sources */,
+				18E35C38184478D0001B6331 /* mailRegView.m in Sources */,
 				599396F21835F3AC0050E1BD /* HomeView.m in Sources */,
 				5976EC7C1833CD27001C14FA /* main.m in Sources */,
 				599397181835F8940050E1BD /* MapView.m in Sources */,
