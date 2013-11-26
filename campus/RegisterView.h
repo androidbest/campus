@@ -10,4 +10,6 @@
 
 @interface RegisterView : BaseView
 
+@property (strong, nonatomic) IBOutlet UISegmentedControl *segmentControl;
+
 @end

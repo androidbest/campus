@@ -7,8 +7,9 @@
 //
 
 #import "RegisterView.h"
-
+#import "RegisterController.h"
 @interface RegisterView ()
+
 
 @end
 
@@ -19,6 +20,9 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        RegisterController *registerController = [RegisterController new];
+        registerController.registerView=self;
+        self.controller = registerController;
     }
     return self;
 }
@@ -26,8 +30,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationItem.title=@"注册";
+     [_segmentControl addTarget:self.controller action:@selector(segmentAction:) forControlEvents:UIControlEventValueChanged];
+    
     // Do any additional setup after loading the view from its nib.
 }
+
+-(void)segmentAction:(UISegmentedControl *)Seg{}
 
 - (void)didReceiveMemoryWarning
 {
