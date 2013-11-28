@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MailRegView">
             <connections>
+                <outlet property="registerButton" destination="9xy-ld-R7J" id="lfa-e6-y9a"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
