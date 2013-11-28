@@ -17,4 +17,9 @@
 @property (strong, nonatomic) IBOutlet UIButton *third;
 @property (strong, nonatomic) IBOutlet UIButton *four;
 @property (strong, nonatomic)UIButton *rightBtn;
+
+
+
+
+
 @end
