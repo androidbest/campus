@@ -22,14 +22,14 @@
     switch (Index) {
         case 0:{
             //手机注册
-            [self initView:&Index];
-            NSLog(@"test %ld",(long)Index);
+            [self initView:0];
+        
         }
             break;
         case 1:{
             //邮箱注册
-            [self initView:&Index];
-            NSLog(@"test %ld",(long)Index);
+            [self initView:1];
+            
         }
             break;
     }
@@ -39,6 +39,8 @@
 
 //初始化注册视图
 -(void) initView:(NSInteger *)index{
+    NSLog(@"test %ld",(long)index);
+
     if (index==0) {
         MobileRegView *mobileRegView=[[MobileRegView alloc] initWithNibName:@"MobileRegView" bundle:nil];
         mobileRegView.view.frame=CGRectMake(0, 100, 320,480 );
