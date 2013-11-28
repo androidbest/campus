@@ -14,6 +14,7 @@
 #import "ToolUtils.h"
 #import "DDMenuController.h"
 #import "SideslipView.h"
+#import "AppDelegate.h"
 @interface HomeView ()
 
 @end
@@ -64,6 +65,14 @@
 //     [_left setBackgroundImage:[UIImage imageNamed:@"home_topleft"] forState:UIControlStateNormal];
 //     [self addSubview:_left];
     
+    _leftBtn=[UIButton buttonWithType:UIButtonTypeCustom];
+    _leftBtn.frame=CGRectMake(0,0,28,28);
+    [_leftBtn setBackgroundImage:[UIImage imageNamed:@"home_topleft"] forState:UIControlStateNormal];
+    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    [_leftBtn addTarget:appDelegate.rootController action:@selector(showLeft:) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.leftBarButtonItem=[[UIBarButtonItem alloc] initWithCustomView:_leftBtn];
+    
+    
     
     _rightBtn=[UIButton buttonWithType:UIButtonTypeCustom];
     _rightBtn.frame=CGRectMake(0,0,28,28);
@@ -85,19 +94,33 @@
     }
     SGFocusImageItem *item3 = [[SGFocusImageItem alloc] initWithTitle:@"3" image:@"1" tag:3];
     [itempArray addObject:item3];
-    SGFocusImageFrame *bannerView = [[SGFocusImageFrame alloc] initWithFrame:CGRectMake(0, 66, ScreenWidth, 70) delegate:self.controller imageItems:itempArray isAuto:YES];
+    SGFocusImageFrame *bannerView = [[SGFocusImageFrame alloc] initWithFrame:CGRectMake(0, 66, ScreenWidth, 70) delegate:self.controller imageItems:itempArray isAuto:YES num:3.0];
+    bannerView.tag=0;
     [bannerView scrollToIndex:0];
     [self.view addSubview:bannerView];
     
-    SGFocusImageFrame *bannerView1 = [[SGFocusImageFrame alloc] initWithFrame:CGRectMake(0, 138, ScreenWidth, 169) delegate:self.controller imageItems:itempArray isAuto:YES];
+    SGFocusImageFrame *bannerView1 = [[SGFocusImageFrame alloc] initWithFrame:CGRectMake(0, 138, ScreenWidth, 169) delegate:self.controller imageItems:itempArray isAuto:YES num:4.0] ;
+    
+    bannerView1.tag=1;
     [bannerView1 scrollToIndex:0];
     [self.view addSubview:bannerView1];
+    
+    
+    [_first addTarget:self.controller action:@selector(firstAction) forControlEvents:UIControlEventTouchUpInside];
+    
+    
 }
 
+-(void)firstAction{}
 
 -(void)viewWillAppear:(BOOL)animated{
    [self.navigationController.navigationBar setBarTintColor:nil];
    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor],NSForegroundColorAttributeName,[UIFont boldSystemFontOfSize:20],NSFontAttributeName,nil]];
+    self.navigationController.navigationBarHidden=NO;
+    if ([self respondsToSelector:@selector(setEdgesForExtendedLayout:)]) {
+        self.edgesForExtendedLayout = UIRectEdgeAll;
+    }
+    [self swithGestureRecognizer:YES];
 }
 
 -(void)loginPage{}

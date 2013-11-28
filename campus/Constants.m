@@ -10,6 +10,7 @@
 
 //全局常量
 NSString * const requestError=@"网络超时";
+NSString * const helpurl=@"system/map.html";
 
 //全局变量
 //Tuser *user=nil;

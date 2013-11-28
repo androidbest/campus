@@ -23,7 +23,7 @@
 
 static NSString *SG_FOCUS_ITEM_ASS_KEY = @"loopScrollview";
 
-static CGFloat SWITCH_FOCUS_PICTURE_INTERVAL = 2.0; //switch interval time
+//static CGFloat SWITCH_FOCUS_PICTURE_INTERVAL = 3.0; //switch interval time
 
 @implementation SGFocusImageFrame
 @synthesize delegate = _delegate;
@@ -55,11 +55,12 @@ static CGFloat SWITCH_FOCUS_PICTURE_INTERVAL = 2.0; //switch interval time
     return self;
 }
 
-- (id)initWithFrame:(CGRect)frame delegate:(id<SGFocusImageFrameDelegate>)delegate imageItems:(NSArray *)items isAuto:(BOOL)isAuto
+- (id)initWithFrame:(CGRect)frame delegate:(id<SGFocusImageFrameDelegate>)delegate imageItems:(NSArray *)items isAuto:(BOOL)isAuto num:(double)countNum
 {
     self = [super initWithFrame:frame];
     if (self)
     {
+        _conutNum=countNum;
         NSMutableArray *imageItems = [NSMutableArray arrayWithArray:items];
         objc_setAssociatedObject(self, (const void *)SG_FOCUS_ITEM_ASS_KEY, imageItems, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
         _isAutoPlay = isAuto;
@@ -69,9 +70,9 @@ static CGFloat SWITCH_FOCUS_PICTURE_INTERVAL = 2.0; //switch interval time
     }
     return self;
 }
-- (id)initWithFrame:(CGRect)frame delegate:(id<SGFocusImageFrameDelegate>)delegate imageItems:(NSArray *)items
+- (id)initWithFrame:(CGRect)frame delegate:(id<SGFocusImageFrameDelegate>)delegate imageItems:(NSArray *)items num:(double)countNum
 {
-    return [self initWithFrame:frame delegate:delegate imageItems:items isAuto:YES];
+    return [self initWithFrame:frame delegate:delegate imageItems:items isAuto:YES num:countNum];
 }
 
 - (void)dealloc
@@ -136,7 +137,7 @@ static CGFloat SWITCH_FOCUS_PICTURE_INTERVAL = 2.0; //switch interval time
         [_scrollView setContentOffset:CGPointMake(ITEM_WIDTH, 0) animated:NO] ;
         if (_isAutoPlay)
         {
-            [self performSelector:@selector(switchFocusImageItems) withObject:nil afterDelay:SWITCH_FOCUS_PICTURE_INTERVAL];
+            [self performSelector:@selector(switchFocusImageItems) withObject:nil afterDelay:_conutNum];
         }
         
     }
@@ -157,7 +158,7 @@ static CGFloat SWITCH_FOCUS_PICTURE_INTERVAL = 2.0; //switch interval time
     
     if ([imageItems count]>1 && _isAutoPlay)
     {
-        [self performSelector:@selector(switchFocusImageItems) withObject:nil afterDelay:SWITCH_FOCUS_PICTURE_INTERVAL];
+        [self performSelector:@selector(switchFocusImageItems) withObject:nil afterDelay:_conutNum];
     }
     
 }

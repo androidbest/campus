@@ -9,5 +9,6 @@
 #import "BaseView.h"
 
 @interface MapView : BaseView
+@property (strong, nonatomic) IBOutlet UIWebView *webView;
 
 @end

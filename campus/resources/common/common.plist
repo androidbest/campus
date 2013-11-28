@@ -3,10 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>httpurl</key>
-	<string>http://218.206.4.38:8081/phoneservice/</string>
-	<key>helpurl</key>
-	<string>http://218.206.4.38:8081/phoneservice/help.html</string>
-	<key>temphttpurl</key>
-	<string>http://218.206.4.38:8081/phoneservice/</string>
+	<string>http://s-82812.gotocdn.com/mars/</string>
+	<key>hcxurl</key>
+	<string>http://192.168.0.114:8080/mars</string>
+	<key>clurl</key>
+	<string>http://192.168.0.112:8080/mars</string>
+	<key>onlineurl</key>
+	<string>http://s-82812.gotocdn.com/mars/</string>
 </dict>
 </plist>

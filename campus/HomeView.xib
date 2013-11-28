@@ -6,6 +6,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeView">
             <connections>
+                <outlet property="first" destination="rEy-qR-TYI" id="vot-Nj-kl5"/>
+                <outlet property="four" destination="FF4-v5-mSx" id="OIT-MX-ron"/>
+                <outlet property="sencond" destination="x0R-d2-GBT" id="R5C-Bi-hAH"/>
+                <outlet property="third" destination="pMM-Ki-0cx" id="KXy-tW-gcd"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>

@@ -53,6 +53,7 @@
 - (id)initWithRootViewController:(UIViewController*)controller {
     if ((self = [self init])) {
         _root = controller;
+//        _conutNum=countNum;
     }
     return self;
 }
@@ -403,8 +404,8 @@
     }
     
     if (_menuFlags.canShowLeft) {
-        UIBarButtonItem *button = [[barButtonItemClass alloc] initWithImage:[UIImage imageNamed:@"nav_menu_icon.png"] style:UIBarButtonItemStyleBordered target:self action:@selector(showLeft:)];
-        topController.navigationItem.leftBarButtonItem = button;
+//        UIBarButtonItem *button = [[barButtonItemClass alloc] initWithImage:[UIImage imageNamed:@"nav_menu_icon.png"] style:UIBarButtonItemStyleBordered target:self action:@selector(showLeft:)];
+//        topController.navigationItem.leftBarButtonItem = button;
     } else {
 		if(topController.navigationItem.leftBarButtonItem.target == self) {
 			topController.navigationItem.leftBarButtonItem = nil;
@@ -412,8 +413,8 @@
     }
     
     if (_menuFlags.canShowRight) {
-        UIBarButtonItem *button = [[barButtonItemClass alloc] initWithImage:[UIImage imageNamed:@"nav_menu_icon.png"] style:UIBarButtonItemStyleBordered  target:self action:@selector(showRight:)];
-        topController.navigationItem.rightBarButtonItem = button;
+//        UIBarButtonItem *button = [[barButtonItemClass alloc] initWithImage:[UIImage imageNamed:@"nav_menu_icon.png"] style:UIBarButtonItemStyleBordered  target:self action:@selector(showRight:)];
+//        topController.navigationItem.rightBarButtonItem = button;
     } else {
 		if(topController.navigationItem.rightBarButtonItem.target == self) {
 			topController.navigationItem.rightBarButtonItem = nil;

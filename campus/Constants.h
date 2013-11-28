@@ -12,6 +12,7 @@
 
 //全局常量
 extern NSString * const requestError;
+extern NSString * const helpurl;
 
 //全局变量
 //extern Tuser *user;

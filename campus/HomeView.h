@@ -12,5 +12,9 @@
 @interface HomeView : BaseView
 @property (strong ,nonatomic)NavigationTitleView * navigationTitleView;
 @property (strong, nonatomic)UIButton *leftBtn;
+@property (strong, nonatomic) IBOutlet UIButton *first;
+@property (strong, nonatomic) IBOutlet UIButton *sencond;
+@property (strong, nonatomic) IBOutlet UIButton *third;
+@property (strong, nonatomic) IBOutlet UIButton *four;
 @property (strong, nonatomic)UIButton *rightBtn;
 @end

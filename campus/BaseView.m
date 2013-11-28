@@ -7,7 +7,8 @@
 //
 
 #import "BaseView.h"
-
+#import "DDMenuController.h"
+#import "AppDelegate.h"
 @interface BaseView ()
 
 @end
@@ -35,4 +36,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+//手势开关
+-(void)swithGestureRecognizer:(BOOL) swith{
+    AppDelegate *app=[[UIApplication sharedApplication] delegate];
+    DDMenuController *menu=app.rootController;
+    [menu.tap setEnabled:swith];
+    [menu.pan setEnabled:swith];
+}
 @end

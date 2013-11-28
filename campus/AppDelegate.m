@@ -16,6 +16,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [[ConfigFile newInstance] initData];
+//    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackTranslucent];
     HomeView *home=[HomeView new];
     _navigationController=[[UINavigationController alloc] initWithRootViewController:home];
     _rootController = [[DDMenuController alloc] initWithRootViewController:_navigationController];

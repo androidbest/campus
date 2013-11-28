@@ -10,4 +10,7 @@
 #import "ControllerProtocol.h"
 @interface BaseView : UIViewController
 @property(strong,nonatomic)id<ControllerProtocol> controller;
+@property (strong ,nonatomic)UIActivityIndicatorView *activityIndicatorView;
+
+-(void)swithGestureRecognizer:(BOOL) swith;
 @end
