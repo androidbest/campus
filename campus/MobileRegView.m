@@ -26,6 +26,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.registerButton.layer.masksToBounds = YES;
+    self.registerButton.layer.cornerRadius = 6.0;
     // Do any additional setup after loading the view from its nib.
 }
 

@@ -9,5 +9,6 @@
 #import "BaseView.h"
 
 @interface MailRegView : BaseView
+@property (strong, nonatomic) IBOutlet UIButton *registerButton;
 
 @end
