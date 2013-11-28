@@ -9,5 +9,6 @@
 #import "BaseView.h"
 
 @interface MobileRegView : BaseView
+@property (strong, nonatomic) IBOutlet UIButton *registerButton;
 
 @end
