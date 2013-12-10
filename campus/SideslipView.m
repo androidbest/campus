@@ -2,7 +2,7 @@
 //  SideslipView.m
 //  campus
 //
-//  Created by wangshuang on 11/26/13.
+//  Created by wangshuang on 11/29/13.
 //  Copyright (c) 2013 campus. All rights reserved.
 //
 
@@ -18,10 +18,9 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        SideslipController *sideslip=[SideslipController new];
-        sideslip.sideslipView=self;
-        self.controller=sideslip;
-        
+        SideslipController *sides=[SideslipController new];
+        sides.sideslipView=self;
+        self.controller=sides;
     }
     return self;
 }
@@ -29,9 +28,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor=[UIColor whiteColor];
-    
-
+    _tableview.delegate=self.controller;
+    _tableview.dataSource=self.controller;
 }
 
 - (void)didReceiveMemoryWarning
