@@ -108,10 +108,16 @@
     
     [_first addTarget:self.controller action:@selector(firstAction) forControlEvents:UIControlEventTouchUpInside];
     
+    [_sencond addTarget:self.controller action:@selector(sencondAction:) forControlEvents:UIControlEventTouchUpInside];
+
     
 }
 
+
+
 -(void)firstAction{}
+
+- (void)sencondAction:(UIButton *)button{}
 
 -(void)viewWillAppear:(BOOL)animated{
    [self.navigationController.navigationBar setBarTintColor:nil];
@@ -182,4 +188,6 @@
     [super didReceiveMemoryWarning];
 }
 
+- (IBAction)sencond:(id)sender {
+}
 @end
